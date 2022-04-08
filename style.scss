@@ -212,7 +212,10 @@
 }
 @media(min-width: 768px){
     body{
+        height: 100vh;
+        justify-content: center;
         form{
+            // margin: auto;
             flex-direction: row;
             .BillLabel{
                 display: flex;

@@ -221,6 +221,12 @@
 }
 
 @media (min-width: 768px) {
+  body {
+    height: 100vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   body form {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
