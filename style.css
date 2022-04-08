@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+:root {
+  --var--Strong-cyan: hsl(172, 67%, 45%);
+  --var--Very-dark-cyan: hsl(183, 100%, 15%);
+  --var--Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --var--Grayish-cyan: hsl(184, 14%, 56%);
+  --var--Light-grayish-cyan: hsl(185, 41%, 84%);
+  --var--Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --var--White: hsl(0, 0%, 100%);
+}
+
+@media (min-width: 375px) {
+  body {
+    background-color: var(--var--Light-grayish-cyan);
+    font-family: 'Space Mono', monospace;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body h1 {
+    color: var(--var--Very-dark-cyan);
+  }
+  body form {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: var(--var--White);
+  }
+  body form .BoxOne label {
+    margin-left: 0.8rem;
+    color: var(--var--Dark-grayish-cyan);
+  }
+  body form .BoxOne #Bill {
+    background-image: url(/images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 3% 50%;
+    background-color: var(--var--Very-light-grayish-cyan);
+    padding: 0.5rem;
+    margin: 0rem 1rem;
+    text-align: end;
+    font-family: 'Space Mono', monospace;
+    color: var(--var--Very-dark-cyan);
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    cursor: pointer;
+  }
+  body form .BoxOne #Bill:hover {
+    border: 2px solid var(--var--Strong-cyan);
+  }
+  body form .BoxOne .NumbersBox {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  body form .BoxOne .NumbersBox .calculate-btn {
+    font-size: 19px;
+    background-color: var(--var--Very-dark-cyan);
+    margin: 0.2rem;
+    width: 70px;
+    padding: 0.5rem 3rem;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--var--White);
+  }
+  body form .BoxOne .NumbersBox .calculate-btn:hover {
+    background-color: var(--var--Strong-cyan);
+    color: var(--var--Dark-grayish-cyan);
+  }
+  body form .BoxOne .NumbersBox .calculate-btn input {
+    display: none;
+  }
+  body form .BoxOne .NumbersBox .custom {
+    width: 70px;
+    text-align: center;
+    color: var(--var--White);
+  }
+  body form .BoxOne .NumbersBox .custom input {
+    border: none;
+    width: 5rem;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0.2rem;
+    padding: 0.5rem 2rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 19px;
+    font-weight: 700;
+    border: 2px solid transparent;
+    cursor: pointer;
+    background-color: var(--var--Very-light-grayish-cyan);
+  }
+  body form .BoxOne .NumbersBox .custom input:hover {
+    border: 2px solid var(--var--Strong-cyan);
+  }
+  body form .BoxOne .people {
+    margin: 0.5rem 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body form .BoxOne .people .inputPeople {
+    background-image: url(/images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 3% 50%;
+    background-color: var(--var--Very-light-grayish-cyan);
+    border: 1px solid transparent;
+    padding: 0.5rem;
+    margin: 0rem 1rem;
+    text-align: end;
+    font-family: 'Space Mono', monospace;
+    color: var(--var--Very-dark-cyan);
+    font-weight: 700;
+    font-size: 24px;
+  }
+  body form .BoxOne .people .error {
+    border: 1px solid red;
+  }
+  body form .BoxOne .people .Cant {
+    position: relative;
+    text-align: end;
+    margin-right: 0.2rem;
+    bottom: 4.8rem;
+    color: red;
+    display: none;
+  }
+  body form .ContainerDataPerson {
+    background-color: var(--var--Very-dark-cyan);
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 2rem;
+  }
+  body form .ContainerDataPerson .Container-data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  body form .ContainerDataPerson .containerText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body form .ContainerDataPerson .containerText .Tip {
+    color: var(--var--White);
+  }
+  body form .ContainerDataPerson .containerText .person {
+    color: var(--var--Dark-grayish-cyan);
+  }
+  body form .ContainerDataPerson .data {
+    font-size: 28px;
+    color: var(--var--Strong-cyan);
+  }
+  body form .BtnContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body form .BtnContainer .btn-reset {
+    border-radius: 5px;
+    padding: 0.6rem 6rem;
+    font-size: 22px;
+    font-weight: 700;
+    border: none;
+    color: var(--var--Very-dark-cyan);
+    background-color: var(--var--Strong-cyan);
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  body form .BtnContainer .btn-reset:hover {
+    background-color: var(--var--Light-grayish-cyan);
+  }
+}
+
+@media (min-width: 768px) {
+  body form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body form .BillLabel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body form .BtnContainer {
+    position: relative;
+    top: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  body form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body form .BillLabel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=style.css.map */

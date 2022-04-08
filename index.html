@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  </style>
+</head>
+<body>
+  <h1>SPLI<br>TTER</h1>
+<form id="form">
+<div class="BoxOne">
+  <label for="Bill" class="BillLabel">Bill
+  <input type="number" name="Bill" id="Bill">
+  </label>
+  <label for="Numbers">Select Tip %</label>
+  <div class="NumbersBox">
+        <div class="calculate-btn" data-percentage="5">5%</div>
+        <div class="calculate-btn" data-percentage="10" >10%</div>
+        <div class="calculate-btn" data-percentage="15">15%</div>
+        <div class="calculate-btn" data-percentage="25">25%</div>
+        <div class="calculate-btn" data-percentage="50">50%</div>
+      <label for="custom" class="custom">
+        <input type="number" name="custom" id="custom" placeholder="Custom">
+      </label>
+  </div>
+<label for="people" class="people">
+  Number of People
+  <input type="number" name="people" id="people" class="inputPeople">
+  <span class="Cant">Can't be zero</span>
+  </label>
+</div>
+  <div class="ContainerDataPerson">
+  <div class="Container-data">
+    <div class="containerText">
+      <span class="Tip">
+        Tip Amount
+      </span>
+      <span class="person">
+        / person
+      </span>  
+    </div>
+    <span id="AmountPerson" class="data">
+      $00.00
+    </span>
+  </div>
+  <div class="Container-data">
+    <div class="containerText">
+      <span class="Tip">Total</span>
+      <span class="person"> / person</span>  
+    </div>
+    <span id="TotalAmount" class="data">
+      $00.00
+      </span>
+    </div>
+    <div class="BtnContainer">
+      <button class="btn-reset" id="ResetBtn">Reset</button>  
+    </div>
+</form>
+  <script src="/index.js"></script>
+</body>
+</html>
